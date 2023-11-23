@@ -1,5 +1,4 @@
 # Object-to-object mapping framework microbenchmark
-![CI](https://github.com/arey/java-object-mapper-benchmark/workflows/CI/badge.svg)
 
 Multi-layered applications often require to map between different object models (e.g. DTOs and entities). 
 Writing such boiler plate mapping code is a tedious and error-prone task.
@@ -12,20 +11,22 @@ JMH is developed by the OpenJDK team.
 
 ## Benchmarked object to object mapper frameworks
 
-- [Dozer](https://github.com/DozerMapper/dozer)
+- [Dozer](https://github.com/DozerMapper/dozer)*
 - [MapStruct](http://mapstruct.org/)
 - [ModelMapper](http://modelmapper.org/)
 - [Selma](http://www.selma-java.org/)
-- [Orika](https://github.com/orika-mapper/orika)
-- [JMapper](https://github.com/jmapper-framework/jmapper-core)
+- [Orika](https://github.com/orika-mapper/orika)*
+- [JMapper](https://github.com/jmapper-framework/jmapper-core)*
 - [BULL](https://github.com/HotelsDotCom/bull)
 - [datus](https://github.com/roookeee/datus)
 - [ReMap](https://github.com/remondis-it/remap)
 
+*Removed from benchmark because it is deprecated, abandoned or low maintenance.
+
 ## Contributing to benchmark
 
 
-Github is for social coding platform: if you want to add another mapping framework or optimize an existing one, we encourage contributions 
+GitHub is for social coding platform: if you want to add another mapping framework or optimize an existing one, we encourage contributions 
 through pull requests from [forks of this repository](http://help.github.com/forking/).
 If you want to contribute code this way, please reference a GitHub ticket as well covering the specific issue you are addressing.
 To add a new mapper, please add a unit test that extends the `AbstractMapperTest` class and declare your mapper into the `MapperBenchmark` class. 
